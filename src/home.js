@@ -11,8 +11,8 @@ class Home extends Component {
           <p>To start, input the cryptogram you wish to solve (the encrypted text, pre-translation) exactly as written (with spaces and punctuation, but not line breaks) below.</p>
         </div>
         <div id="home-input">
-          <textarea id="crypto-input" onChange={this.handleChange}></textarea><br />
-          <button id="submit" onClick={this.handleSubmit}>Begin</button>
+          <textarea id="crypto-input" onChange={this.props.onChange}></textarea><br />
+          <button id="submit" onClick={this.props.onSubmit}>Begin</button>
         </div>
       </div>
     )
