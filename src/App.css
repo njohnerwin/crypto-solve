@@ -31,8 +31,9 @@ body {
   padding-top: 20px;
 }
 
-#return-button {
-  margin-top: 20px;
+.return-button {
+  margin-top: 25px;
+  margin-right: 10px;
   font-family: "courier", serif;
   background-color: black;
   color: white;
@@ -44,10 +45,6 @@ body {
   margin-bottom: 5px;
   width: 35%;
   height: 5rem;
-}
-
-#submit {
-
 }
 
 .black-char {

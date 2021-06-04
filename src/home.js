@@ -12,7 +12,7 @@ class Home extends Component {
         </div>
         <div id="home-input">
           <textarea id="crypto-input" onChange={this.props.onChange}></textarea><br />
-          <button id="submit" onClick={this.props.onSubmit}>Begin</button>
+          <button id="submit" className="return-button" onClick={this.props.onSubmit}>Begin</button>
         </div>
       </div>
     )

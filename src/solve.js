@@ -31,6 +31,8 @@ class Solve extends Component {
     return (/[a-zA-Z]/).test(char)
   }
 
+  
+
   handleChange(event) {
     let letterkey = event.target.id;
     let newchar = event.target.value;
@@ -90,7 +92,7 @@ class Solve extends Component {
             <b className="index-char">{x}</b>
           ))}
           <br />
-          <button id="return-button" onClick="">Go back</button>
+          <button className="return-button" onClick={this.props.onClick}>Go back</button>
         </div>
       </div>
     )
