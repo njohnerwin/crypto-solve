@@ -31,6 +31,15 @@ body {
   padding-top: 20px;
 }
 
+#return-button {
+  margin-top: 20px;
+  font-family: "courier", serif;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
 #crypto-input {
   margin-bottom: 5px;
   width: 35%;

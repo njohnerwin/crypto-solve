@@ -77,10 +77,9 @@ class Solve extends Component {
       <p>To solve, fill in the blanks on the letter key (bottom) to automatically replace all encrypted letters that match those keys.</p>
         <div className="crypto-text">
           <p>{this.state.decrypted.map((x) => 
-            <b className="white-char">{x}</b> )}</p>
-            {/* (!this.isCharacterALetter(x) ? 
-              <b className="white-char">{x}</b> :
-              <b className="black-char">{x.toUpperCase()}</b>))}</p> */}
+            x === x.toUpperCase() ?
+            <b className="white-char">{x}</b> :
+            <b className="black-char">{x.toUpperCase()}</b>)}</p>
         </div>
         <div className="alpha-key">
           {this.state.letterkey.map((x) => 
@@ -90,6 +89,8 @@ class Solve extends Component {
           {(this.state.letterkey.map((x) => 
             <b className="index-char">{x}</b>
           ))}
+          <br />
+          <button id="return-button" onClick="">Go back</button>
         </div>
       </div>
     )
